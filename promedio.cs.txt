@@ -1,0 +1,31 @@
+﻿internal class Program
+{
+    private static void Main(string[] args)
+    {
+        string clase;
+        int n1, n2, n3, n4, n5, promedio;
+        Console.WriteLine("Ingrese una Clase: ");
+        clase = Console.ReadLine();
+        Console.WriteLine("Ingrese la nota 1: ");
+        n1 = int.Parse(Console.ReadLine()); 
+        Console.WriteLine("Ingrese la nota 2: ");
+        n2 = int.Parse(Console.ReadLine());
+        Console.WriteLine("Ingrese la nota 3: ");
+        n3 = int.Parse(Console.ReadLine()); 
+        Console.WriteLine("Ingrese la nota 4: ");
+        n4 = int.Parse(Console.ReadLine());
+        Console.WriteLine("Ingrese la nota 5: ");       
+        n5 = int.Parse(Console.ReadLine()); 
+
+        promedio = (n1 + n2 + n3 + n4 + n5) / 5;
+        Console.WriteLine("El promedio de la clase " + clase + " es: " + promedio);
+        if (promedio >= 70)
+        {
+            Console.WriteLine("El alumno ha aprobado la clase " + clase);
+        }
+        else
+        {
+            Console.WriteLine("El alumno ha reprobado la clase " + clase);
+        }
+    }
+}

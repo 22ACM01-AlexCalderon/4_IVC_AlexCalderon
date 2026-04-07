@@ -1,0 +1,36 @@
+﻿using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int dia, mes;
+
+        Console.WriteLine("Ingrese el día:");
+        dia = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Ingrese el mes (1-12):");
+        mes = Convert.ToInt32(Console.ReadLine());
+
+        if (mes == 12 || mes == 1 || mes == 2)
+        {
+            Console.WriteLine("Es Invierno ❄️");
+        }
+        else if (mes >= 3 && mes <= 5)
+        {
+            Console.WriteLine("Es Primavera 🌸");
+        }
+        else if (mes >= 6 && mes <= 8)
+        {
+            Console.WriteLine("Es Verano ☀️");
+        }
+        else if (mes >= 9 && mes <= 11)
+        {
+            Console.WriteLine("Es Otoño 🍂");
+        }
+        else
+        {
+            Console.WriteLine("Mes inválido");
+        }
+    }
+}
